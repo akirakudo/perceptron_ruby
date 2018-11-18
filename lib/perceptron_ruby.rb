@@ -2,5 +2,7 @@ require "perceptron_ruby/version"
 
 module PerceptronRuby
   class Error < StandardError; end
-  # Your code goes here...
+  def self.greet
+    'HELLO!'
+  end
 end
