@@ -3,6 +3,7 @@ module PerceptronRuby
   require "perceptron_ruby/activation_func"
 
   class Neuron
+    attr_writer :inputs
     attr_reader :output
 
     def initialize(inputs = [0,0])
