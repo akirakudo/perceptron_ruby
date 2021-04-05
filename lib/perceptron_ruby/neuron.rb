@@ -6,10 +6,10 @@ module PerceptronRuby
     attr_writer :inputs
     attr_reader :output
 
-    def initialize(inputs = [0,0])
-      @inputs = Array.new(inputs)
-      @weights = Array.new(inputs.size){rand(0.0..1.0)}
-      @output = 0;
+    def initialize(input_neurons = 2)
+      @inputs = Array.new(input_neurons)
+      @weights = Array.new(input_neurons){rand(0.0..1.0)}
+      @output = nil;
     end
 
     def print_status
